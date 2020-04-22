@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<title>My Page</title>
+		<Meta charset= "utf-8" >
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/png">
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	</head>
+	<body>
+			<div id="home" class="header" data-aos="fade-down" data-aos-duration ="1000">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" width="80px"></a>
+						</div>
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#first" class="scroll">Главная</a></li>
+								<li class="page-scroll"><a href="#second" class="scroll">Обо мне</a></li>
+								<li class="page-scroll"><a href="#3d" class="scroll">3D</a></li>
+								<li><a href="pages/darkmode/dark.html" class="button15">Dark mode</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!---баннер--->
+			<a name="first"><div class="banner text-center" data-aos="fade-up" data-aos-duration="1000"></a>
+				<div class="container">
+					<div class="banner-info">
+						<h1>Мы всего лишь развитые потомки обезьян на маленькой планете с ничем</h1>
+						<h1>не примечательной звездой. Но у нас есть шансы постичь Вселенную.</h1>
+						<h1>Это и делает нас особенными.</h1>
+						<h3>Стивен Хокинг.</h3><br>
+						<label class="page-scroll"><a class="big-btn scroll" href="#down"><span> </span></a></label>
+					</div>
+				</div>
+			</div>
+			<a name="down"><div id="work" class="work"></a>
+			<!---таблица с оценками--->
+				<table>
+		<thead>
+    <tr>
+      <th>Предмет</th>
+      <th>Фамилия преподавателя</th>
+      <th>Оценка</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Предмет">Основы графической композиции</td>
+      <td data-label="Фамилия преподавателя">Глибко Е.А</td>
+      <td data-label="Оценка">4/85B</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Начертательная геометрия</td>
+      <td data-label="Фамилия преподавателя">Федченко А.В</td>
+      <td data-label="Оценка">3/65D</td>
+    </tr>
+	<tr>
+      <td data-label="Предмет">Архитектура вычислительных систем</td>
+      <td data-label="Фамилия преподавателя">Ломакин А.Н</td>
+      <td data-label="Оценка">5/92А</td>
+    </tr>
+	<tr>
+      <td data-label="Предмет">Дискретная математика</td>
+      <td data-label="Фамилия преподавателя">Татаринова О.А</td>
+      <td data-label="Оценка">4/75С</td>
+    </tr>
+	<tr>
+      <td data-label="Предмет">Английский язык</td>
+      <td data-label="Фамилия преподавателя">Ковтун А.А</td>
+      <td data-label="Оценка">4/83B</td>
+    </tr>
+	<tr>
+      <td data-label="Предмет">Правознавство</td>
+      <td data-label="Фамилия преподавателя">Семко М.А</td>
+      <td data-label="Оценка">4/85B</td>
+    </tr>
+	<tr>
+      <td data-label="Предмет">Физкультура</td>
+      <td data-label="Фамилия преподавателя">Натаров В.А</td>
+      <td data-label="Оценка">4/85B</td>
+    </tr>
+	<tr>
+      <td data-label="Предмет">ООП</td>
+      <td data-label="Фамилия преподавателя">Водка А.А</td>
+      <td data-label="Оценка">4/71D</td>
+    </tr>
+		</tbody>
+	</table>   
+				</div>
+				</div>
+					<a name="second"><div id="me" class="me"></a>
+						<div class="container">
+							<div class="head-one text-center me-head" data-aos="fade-up">
+								<h2>Обо мне</h2>
+								<p>Меня зовут Александр.Я родился и живу в Харькове. Харьков — международный студенческий город. Благодаря большому количеству ВУЗов с направлениями для иностранных студентов, з сентября по июнь на улицах города можно встретить выходцев из всех уголков Африки, Азии, Европы и Латинской Америки.</p><br><br>
+							<h2 align="center">Любимые фильмы и сериалы</h2><br>
+							<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#whatever').hoverGrid();
+					    });
+					</script>
+							<div class="me-members" data-aos="fade-left">
+								<div class="col-md-3">
+									<div class="text-center">
+										<a href="https://www.amazon.com/s?k=grand+tour&i=instant-video&ref=nb_sb_noss_2"><img class="serials" src="images/t1.jpg" title="name" /></a>
+										<h3>Grand Tour</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="text-center">
+										<a href="https://go.discovery.com/tv-shows/mythbusters/"><img class="serials" src="images/t2.jpg" title="name" /></a>
+										<h3>Mythbusters</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="text-center">
+										<a href="https://www.netflix.com/ua/title/70305903"><img class="serials" src="images/t3.jpg" title="name" /></a>
+										<h3>Interstellar</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="text-center">
+										<a href="https://www.amazon.com/Now-You-See-Jesse-Eisenberg/dp/B00E978FGQ"><img class="serials" src="images/t4.jpg" title="name" /></a>
+										<h3>Now you see me</h3>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div><br>
+						<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+						<script src="js/app.js"></script><br>
+				<div class="head-one text-center me-head" data-aos="fade-right">
+				<h2>Коротко про меня</h2>
+				<table>
+					<thead>
+						<tr>
+							<td>Грустный</td>
+							<td>...</td>
+							<td>Весёлый</td>
+						</tr>
+					</thead>
+				<tbody>
+					<tr>
+						<td><img class="serials" src="images/mood1.jpg" title="грустный" /></td>
+						<td><img class="serials" src="images/mood3.jpg" title="..." /></td>
+						<td><img class="serials" src="images/mood2.jpg" title="весёлый" /></td>
+					</tr>
+				</tbody>
+				</table><br><br>
+				</div>
+			<div class="text-center head-one me-head" data-aos="zoom-in">
+				<div class="me-members">
+					<h2>Я</h2>
+						<p style="font-size:1.5em;">😉 Вежливый 😉</p>
+						<p style="font-size:1.5em;">😎 Надёжный 😎</p>
+						<p style="font-size:1.5em;">👽 Понимающий 👽</p>
+				</div>
+			</div>
+	</div>
+					<!---слайдер--->
+					<div id="contact" class="contact" data-aos="fade-up" data-aos-duration="3000">
+						<div class="container">
+							<div class="text-center">
+								<div class="swiper-container main-slider loading">
+									  <div class="swiper-wrapper">
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/Black_hole_-_Messier_87_crop_max_res.jpg)">
+											<img src="images/Black_hole_-_Messier_87_crop_max_res.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<span class="caption" style="font-size:1.5em;">Первое изображение аккреционного диска чёрной дыры.</span>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/31-318663_sirius-star.jpg)">
+											<img src="images/31-318663_sirius-star.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title" style="font-size:2em; color:black;">Сириус - является самой яркой звездой на небе.</p>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/regnum_picture_14520164212404697_normal.jpg)">
+											<img src="images/regnum_picture_14520164212404697_normal.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title" style="font-size:1.5em;">Момент столкновения галактик Млечный Путь и Андромеда который наступит уже приблизительно через 4 млрд. лет.</p>
+											<span class="caption"></span>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/22273_PIA22960-web.jpg)">
+											<img src="images/22273_PIA22960-web.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title">Селфи марсохода Curiosity</p>
+											<span class="caption"></span>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/opo9635a1.jpg)">
+											<img src="images/opo9635a1.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title">Снимок телескопа Хаббл - Квазар PG 0052+251</p>
+											<span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+										  </div>
+										</div>
+									  </div>
+									  <div class="swiper-button-prev swiper-button-white"></div>
+									  <div class="swiper-button-next swiper-button-white"></div>
+									</div>
+									<div class="swiper-container nav-slider loading">
+									  <div class="swiper-wrapper">
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/Black_hole_-_Messier_87_crop_max_res.jpg)">
+											<img src="images/Black_hole_-_Messier_87_crop_max_res.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title"></p>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/31-318663_sirius-star.jpg)">
+											<img src="images/31-318663_sirius-star.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title"></p>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/regnum_picture_14520164212404697_normal.jpg)">
+											<img src="images/regnum_picture_14520164212404697_normal.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title"></p>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/22273_PIA22960-web.jpg)">
+											<img src="images/22273_PIA22960-web.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title"></p>
+										  </div>
+										</div>
+										<div class="swiper-slide">
+										  <figure class="slide-bgimg" style="background-image:url(images/opo9635a1.jpg)">
+											<img src="images/opo9635a1.jpg" class="entity-img" />
+										  </figure>
+										  <div class="content">
+											<p class="title"></p>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+									  <script  src="js/index.js"></script>
+							</div>	
+						</div>
+					</div>
+					<!---3д модель--->
+					<a name="3d"><div id="me" class="me"></a>
+						<div class="container">
+							<div class="head-one text-center me-head" >
+								<h2>3D</h2><br>
+								<a href="3d.html" class="scroll"><img src="images/merlin.jpg" width="400px" data-aos="flip-left"/></a><br><br>	
+								<h2><a href="mailto:sanyok.smotra@gmail.com">Gmail@</a></h2>
+							</div>
+						</div><br>
+						<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+						<script src="js/app.js"></script>
+					</div>
+					<!---footer--->
+					<div class="footer">
+						<div class="container">
+							<div class="footer-center">
+								<p>Copyright©2020 All Right Served</p>
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
+
